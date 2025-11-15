@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>doc</title>
+    <style> 
+    body {background-color: aliceblue;}
+    hr {border: 5px solid yellowgreen;}
+    
+    .webtitle {
+    animation: webtitleAnim 5s infinite;}
+
+    @keyframes webtitleAnim {
+    0% {
+        color: blue;
+        font-size: 200%;
+    }
+    30% {
+        color: green;
+        font-size: 150%;
+    }
+    100% {
+        color: red;
+        font-size: 100%;
+    }}
+
+
+    h1 {
+            color: brown;
+        text-shadow: 2px 2px 2px yellow, 0 0 25px gray, 0 0 5px darkgray;
+            text-align: center;
+        }
+    .html5 {
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    text-shadow: 2px 2px 2px yellow, 0 0 25px gray, 0 0 5px darkgray;
+    display: inline-block;
+    transform: rotate(10deg);}
+    
+    .css3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: red;
+    text-shadow: 2px 2px 2px yellow, 0 0 25px gray, 0 0 5px darkgray;
+    display: inline-block;
+    animation: css3-rotate 3s infinite;}
+    
+    @keyframes css3-rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    30% {
+        transform: rotate(90deg);
+    }
+    100% {
+        transform: rotate(270deg);
+    }}
+    
+    .javascript {
+    font-size: 20px;
+    font-weight: bold;
+    color: blue;
+    text-shadow: 2px 2px 2px yellow, 0 0 25px gray, 0 0 5px darkgray;
+    display: inline-block;
+    transform: rotate(-10deg);}
+
+
+    p {
+    text-indent: 2em;   
+    text-align: justify; }
+
+    .survey {
+    background-color: lightgreen; 
+    color: red;               
+    font-size: 20px;         
+    width: 80px;
+    border: 3px outset yellow;
+    padding: 10px;
+    border-radius: 15px;
+    text-decoration: none;
+    text-align: center;            }
+
+
+
+
+
+    nav .목차 {
+    list-style: none;
+    margin: 0;
+    padding: 10px;
+    background-color: rgb(146, 198, 228);
+    text-align: center;}
+    
+    nav .목차 li {
+    display: inline-block;
+    margin: 0 20px;}
+    
+    nav .목차 a {
+    text-decoration: none;
+    color: rgb(40, 13, 160);
+    font-size: 15px;
+    font-weight: bold;}
+    
+    nav .목차 li:hover {
+    background-color: #556b2f; 
+    border-radius: 5px;}
+
+    
+    .전공선택 {
+    background-color: rgb(168, 230, 241);
+    width: 200px;
+    border: 5px dotted rgb(82, 151, 255);}
+
+    .시간표 {
+    width: 100%;
+    border-collapse: collapse; 
+    background-color: rgb(181, 223, 240);}    
+    
+    .시간표 th, .시간표 td {
+    border: 3px solid rgb(25, 98, 122);
+    padding: 8px;
+    text-align: center;}
+
+    .시간표 tbody tr:nth-child(even) {
+    background-color: #82b2df; }
+    
+    .시간표 tr:hover td {
+    background-color: #d4eb6f52; 
+    transition: 0.2s;}
+
+    .시간표 thead {
+        background-color: lightgray; 
+        color: rgb(82, 145, 0);
+        font-size: 20px;
+        font-weight: bold;}
+
+    
+    .교내외활동 {
+    background-color: rgb(167, 237, 255);}
+
+    .지난학기평가 {
+
+    background-color: rgb(127, 252, 220);}
+
+    li:hover {
+            background-color: yellowgreen;
+            cursor: pointer; 
+        }
+
+
+</style>
+  </head>
+  <body>
+    <header>
+     <p>  <h1 class="webtitle">
+        나의 <img src="skh.jpg" alt="404" width="30" height="30" /> 대학생활
+        소개
+      </h1>
+      구지영의 대학생활 소개 홈페이지입니다. 나에 대해 알고 싶은 부분을 목차에서 선택하여 클릭해보세요. </p>
+    </header> 
+    <hr> 
+
+    <nav>
+      <h2>목차</h2>
+      <ol type="1" class="목차">
+        <li><a href="#intro"> 자기소개 </a></li>
+        <li><a href="#plan"> 2025-2 학기 계획 </a></li>
+        <li><a href="#act"> 교내외 활동 </a></li>
+      </ol>
+    </nav>
+
+    <section> 
+        <article id="intro">
+            <h2> 1. 자기소개 </h2>
+            &hearts; 안녕하세요. 소프트웨어융합학부 구지영입니다. &hearts; 
+            <br> 평소 앱, 웹을 비롯한 디자인 분야에도 관심이 있습니다.
+            <br> 제가 가진 아이디어를 구현할 수 있는 웹개발에 매력을 느껴 수강하게 되었습니다.
+            <p> <br> 이번 학기 
+            <span class="html5">HTML5</span>
+            +<span class="css3">CSS3</span>
+            +<span class="javascript">Javascript</span>
+            를 함께 공부해볼 친구 있으면  
+            <mark> 전화 &phone; </mark> 편하게 주세요! 
+            <br> 혹은  <a href="mySurveyCSS3-구지영.html" class="survey"> 여기 </a> 를 눌러 신청서를 작성해주세요.  </p>
+
+            </article>
+
+        <article id="plan">
+            <h2> 2. 2025-2 구지영 학기 계획 </h2>
+            
+            <ol type="1" start="value"> <b> <li> 전공선택: 주전공-심화전공 </li> </b>
+                <ul class="전공선택"> 
+                    <li> 주전공: 소프트웨어융합전공   </li>
+                    <li> 심화전공: 소프트웨어융합 심화전공  </li>
+                </ul> 
+                <p> </p>
+                <b><li> 수강 과목과 수업 시간 </li></b>
+                
+                <table class="시간표">
+                    <thead>
+                        <tr>
+                            <th>과목명</th>
+                            <th>교재</th>
+                            <th>수업시간</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>비아메디아채플</td>
+                             <td></td>
+                             <td>월 14:00~14:50</td>
+                            </tr>
+                            <tr>
+                                <td>Python프로그래밍</td>
+                                <td>
+                                    <img src="py.png" alt="404" width="100" height="150">
+                                </td>
+                                <td>월, 수 15:00~16:15</td>
+                            </tr>
+                            <tr>
+                                <td>인권과 평화</td>
+                                <td></td>
+                                <td>화 10:00~11:50</td>
+                            </tr>
+                            <tr>
+                                <td>웹개발입문</td>
+                                <td>
+                                    <img src="web.jpg" alt="404" width="100" height="150">
+                                </td>
+                                <td>화, 목 12:00~13:15</td>
+                            </tr>
+                            <tr>
+                                <td>한국현대사회의 이해</td>
+                                <td></td>
+                                <td>수 12:00~14:50</td>
+                            </tr>
+                            <tr>
+                                <td>디자인 언포게터블 캐릭터</td>
+                                <td></td>
+                                <td>목 9:00~11:50</td>
+                            </tr>
+                            <tr>
+                                <td>대학생활세미나 II</td>
+                                <td></td>
+                                <td>수 11:00~11:50</td>
+                            </tr>
+                            <tr>
+                                <td>과학기술과 에콜로지</td>
+                                <td></td>
+                                <td>금 13:00~14:50</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </ol>
+         </article>
+
+    <article id="act">
+        <h2>  3. 교내외 활동 </h3> 
+        <ul class="교내외활동">
+            <li> 서브웨이에서 토, 일마다 6시간씩 근무 중 </li>
+            <li> 친구들과 프로그래밍 언어 스터디 활동 중 </li>
+            <li> 글쓰기 공모전에서 최우수상 수상 </li>
+        </ul>
+            
+            </article>
+
+    <article id="last">
+        <h2>  4. 지난 학기 평가 </h3> 
+        <ul class="지난학기평가">
+            <li> 성적: 2개 과목을 제외하고 모두 A+을 받아 만족함 </li>
+            <li> 대인관계: 대학 동기 여럿과 친해져서 만족함 </li>
+            <li> 공부: 개인적으로 공부량이 많이 아쉬웠음. 2학기 때는 전공 공부에 더 정진할 예정 </li>
+        </ul>
+            
+            </article>
+        
+        </section>
+
+</body>
+</html>

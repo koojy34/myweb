@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> web study </title>
+    <style> 
+    h1{
+        color: blue;
+        text-align: center;
+        text-shadow: 2px 2px 2px yellow, 0 0 25px gray, 0 0 5px darkgray;
+
+
+    }
+    hr{ 
+        border: 5px solid lightblue
+    }
+    form{
+         background-color: rgb(201, 251, 255);
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"] {
+    color: darkblue;
+    border: 2px solid skyblue;
+    border-radius: 5px;
+}
+
+
+    input[type="text"]:hover,
+    input[type="email"]:hover,
+    input[type="tel"]:hover {
+    background-color: skyblue;
+}
+
+
+    input[type="text"]:focus,
+    input[type="email"]:focus,
+    input[type="tel"]:focus {
+    font-size: 120%;
+}
+
+    </style>
+</head>
+<body>
+<h1> 웹개발입문 스터디그룹 참여 신청서 </h1>
+웹개발입문 스터디그룹에 참여할 사람은 아래의 각 사항에 답하여 보내주세요. 많은 참여 부탁드립니다.
+<hr> 
+<form> 
+    <P> <label for="name">이름</label>
+        <input type="text" id="name" name="name" /> 
+        <br>
+
+        <label for="email">이메일</label>
+        <input type="email" id="email" name="email" placeholder="id@host" />
+        <br>
+
+        <label for="phone">전화번호</label>
+        <input type="tel" id="phone" name="phone" placeholder="010-1234-5678" /> <br>
+        </P>
+
+
+        <P><label>성별</label>
+        <div class="radio-group">
+            <label><input type="radio" name="gender" value="남" /> 남</label>
+            <label><input type="radio" name="gender" value="여" /> 여</label>
+        </div>
+
+        <label>학년</label>
+        <div class="radio-group">
+            <label><input type="radio" name="grade" value="1학년" /> 1학년</label>
+            <label><input type="radio" name="grade" value="2학년" /> 2학년</label>
+            <label><input type="radio" name="grade" value="3학년" /> 3학년</label>
+            <label><input type="radio" name="grade" value="4학년" /> 4학년</label>
+        </div>  </P>
+
+        <label for="department">소속학부</label>
+        <select id="department" name="department">
+            <option value="인문융합콘텐츠/자율학부">인문융합콘텐츠/자율학부</option>
+            <option value="경영학부">경영학부</option>
+            <option value="사회융합(자율)학부">사회융합(자율)학부</option>
+            <option value="미디어콘텐츠융합(자율)학부">미디어콘텐츠융합(자율)학부</option>
+            <option value="미래융합학부">미래융합학부</option>
+            <option value="소프트웨어융합/IT융합자율학부">소프트웨어융합/IT융합자율학부</option>
+        </select>
+        <br>
+
+        <label for="major1">제1전공</label>
+        <input type="text" id="major1" name="major1" /> <br>
+
+        <label for="major2">제2전공</label>
+        <input type="text" id="major2" name="major2" /> <br>
+
+       <p> <label>관심주제</label>
+        <div class="checkbox-group">
+            <label><input type="checkbox" name="interest" value="HTML5" /> HTML5</label>
+            <label><input type="checkbox" name="interest" value="CSS3" /> CSS3</label>
+            <label><input type="checkbox" name="interest" value="Javascript" /> Javascript</label>
+            <label><input type="checkbox" name="interest" value="웹 페이지 제작" /> 웹 페이지 제작</label>
+        </div> </p>
+        <br>
+
+        <label for="firstDate">첫모임 가능일시</label>
+        <input type="date" id="firstDate" name="firstDate" value="2025-09-25" />
+        <input type="time" id="firstTime" name="firstTime" value="18:00" /> <br> 
+
+        <label for="studyTime">첫모임 공부시간(분)</label>
+        <input type="number" id="studyTime" name="studyTime" value="10" min="10" max="100" step="10" /> <br> 
+
+
+        <label for="comments" >문의 또는 바라는 글</label> <br>
+
+        <textarea id="comments" name="comments" cols="50" rows="10" placeholder="자유롭게 글로 남겨주세요."></textarea> <br>
+
+        <button type="reset">취소</button>
+        <button type="submit">제출</button> 
+</form>
+</body>
+</html>
